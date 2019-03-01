@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/nubia/msm8998-common/msm8998-common-vendor.mk)
+$(call inherit-product, vendor/nubia/nx611j/nx611j-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

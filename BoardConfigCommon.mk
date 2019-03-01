@@ -22,7 +22,7 @@
 # definition file).
 #
 
-PLATFORM_PATH := device/nubia/msm8998-common
+PLATFORM_PATH := device/nubia/nx611j
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -32,11 +32,11 @@ BOARD_VENDOR := nubia
 TARGET_USE_SDCLANG := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msm8998
+TARGET_BOOTLOADER_BOARD_NAME := nx611j
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8998
+TARGET_BOARD_PLATFORM := nx611j
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
 
 # Architecture
@@ -65,7 +65,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/nubia/msm8998
+TARGET_KERNEL_SOURCE := kernel/nubia/nx611j
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # QCOM hardware
@@ -294,4 +294,4 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/nubia/msm8998-common/BoardConfigVendor.mk
+-include vendor/nubia/nx611j/BoardConfigVendor.mk
